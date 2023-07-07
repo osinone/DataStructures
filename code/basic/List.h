@@ -1,18 +1,7 @@
 #include "iostream"
 
-class SequentialList
+struct SequentialList
 {
-private:
     /* data */
-public:
-    SequentialList(/* args */);
-    ~SequentialList();
 };
 
-SequentialList::SequentialList(/* args */)
-{
-}
-
-SequentialList::~SequentialList()
-{
-}

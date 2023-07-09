@@ -13,22 +13,23 @@ typedef struct
     int length=0;
 } SequentialList;
 
+typedef struct LNode{
+    int data;
+    struct LNode *next;
+} LNode, *LinkHead;
 
 
 class SqList
 {
-private:
-    /* data */
 public:
-    SqList(/* args */);
-    ~SqList();
+    static void insert(SequentialList *&L, int i, int e);  // 地址的引用，i插入的位置下标，e插入的元素 
+    static void printList(SequentialList *&L);
+    static void deleteNode(SequentialList *&L, int i); 
+    static int searchByIndex(SequentialList *&L, int i);
+    static int searchByData(SequentialList *&L, int e);
 };
 
-SqList::SqList(/* args */)
-{
-}
-
-SqList::~SqList()
-{
-}
-
+class LinkList{
+    public:
+        static void insert();
+};
